@@ -1,0 +1,47 @@
+
+.navbar-nav li a {
+    color: white;
+}
+.navbar li a:hover, #active, #active1,#active2{background:black; }
+.dropdown-menu a:hover{
+    background:black;
+    color: white;
+}
+.top-left i{
+    text-decoration: none;
+    color: white;
+    height: 10px;
+    margin: 10px;
+
+}
+
+.social a i{
+    text-decoration: none;
+    color: white;
+    float: right;
+    height: 10px;
+    margin: 10px;
+ font-size: 20px;
+
+}
+.carousel-caption h1{
+    color: red;
+    background-color: black;
+}
+.carousel-caption p{
+    color: red;
+    font-style: inherit;
+    font-size:20px;
+    background-color: black;
+}
+
+.footer{
+    height: 100px; margin: 10px; padding:30px; font-size: 20px;
+}
+
+.footer_menu a{
+    margin: 10px;
+    height: 100px;
+    color: white;
+
+}
