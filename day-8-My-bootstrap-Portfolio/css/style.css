@@ -1,4 +1,6 @@
-
+.header-section{
+    background-color: #062c33;
+}
 .navbar-nav li a {
     color: white;
 }
@@ -8,20 +10,32 @@
     color: white;
 }
 .top-left i{
-    text-decoration: none;
+    text-decoration:none;
     color: white;
-    height: 10px;
+    height: auto;
     margin: 10px;
+
+}
+
+.top-left i a{
+    color: white;
+    text-decoration:none;
 
 }
 
 .social a i{
     text-decoration: none;
     color: white;
-    float: right;
-    height: 10px;
+    text-align: right;
+    height: auto;
     margin: 10px;
- font-size: 20px;
+    font-size: 25px;
+
+}
+.social a i:hover{
+
+    color: white;
+    border: 1px solid red;
 
 }
 .carousel-caption h1{
@@ -35,13 +49,61 @@
     background-color: black;
 }
 
+
+
 .footer{
-    height: 100px; margin: 10px; padding:30px; font-size: 20px;
+    height: auto;
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+
+
 }
 
 .footer_menu a{
     margin: 10px;
     height: 100px;
     color: white;
+    text-decoration: none;
 
 }
+
+.footer_menu a:hover{
+    color:green;
+
+
+}
+.footer-social a i{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.footer-social a i:hover{
+
+    background-color: black;
+    color: white;
+    font-size:30px;
+}
+
+.pagination-row{
+    background-color: #062c33;
+}
+
+.add-section{
+    background: url("../image/7.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+.carousel-item h3{
+    background-color: white;
+    text-align: center;
+}
+
+.carousel-item-padding{
+    padding: 100px 250px;
+    color: black;
+}
+
