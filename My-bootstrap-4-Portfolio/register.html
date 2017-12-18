@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Website|| My Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<!------------------------------------------------ header section-------------------------------------------------------->
+<body>
+<header class="header sticky-top">
+    <section class="header-section">
+        <div class="container">
+            <div class=" row">
+                <div class="col-md-4 m-auto">
+                    <ul class="pagination mb-0">
+                        <li class="page-item"><a class="page-link" href="gallery.html">Previous</a></li>
+                        <li class="page-item active"><a class="page-link" href="index.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="about.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="portfolio.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="research.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="project1.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="project2.html">6</a></li>
+                        <li class="page-item"><a class="page-link" href="contact.html">7</a></li>
+                        <li class="page-item"><a class="page-link" href="gallery.html">8</a></li>
+                        <li class="page-item"><a class="page-link" href="about.html">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="top-left  col-md-9">
+                    <i class="fa fa-phone"> +880-1521409419</i>
+                    <i class="fa fa-envelope-o"><a href="http://www.gmail.com">bit0310@iit.du.ac.bd</a> </i>
+                    <i class="fa fa-envelope-o"><a href="http://www.gmail.com">smsofiqulislam310@gmail.com</a> </i>
+                </div>
+
+                <div class="top-right col-xl-3">
+                    <div class="social">
+                        <a href="https://www.facebook.com/smsofiqul.islam" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/sofiqul_310" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/smsofiqul-islam-310/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.behance.net/smsofiqul_islam" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container ">
+            <a href="index.html" class="navbar-brand"><img class="rounded-circle md" src="image/my.jpg" style="height: 50px; width: 50px;" alt=""></a>
+            <button type="button"  class="navbar-toggler" style=" border: 1px solid black;" data-toggle="collapse" data-target="#myMenu">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu" >
+                <Ul class="navbar-nav mr-auto" id="menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+
+
+                    <li class="nav-item dropdown" id="dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" >MY Work</a>
+                        <ul class="dropdown-menu bg-dark" id="dropdown-menu">
+                            <li><a href="research.html" class="nav-link">Research Work</a></li>
+
+                            <li><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="sub-dropdown">Project</a>
+
+                                <ul class="dropdown-menu bg-dark" id="sub-dropdown-menu">
+                                    <li> <a class="dropdown-item" href="project1.html">Project 1-2-3</a></li>
+                                    <li><a class="dropdown-item" href="project2.html" >Others-Project</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                </Ul>
+                <form class="form-inline ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav navbar-right ml-auto">
+                    <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#myModallogin" >Login</a></li>
+                    <li class="nav-item"><a href="register.html" class="nav-link" id="active">Register</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<br/>
+
+<!------------------------------------------------ register form  section-------------------------------------------------------->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12" style="height:auto; border: 1px solid">
+            <h1>Registration Form</h1>
+        </div>
+            <div class="col-sm-12" style="height:auto; border: 1px solid">
+                <br/>
+            <form action="" method="post" id="myForm">
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="firstName">First Name</label>
+                    <div class="col-sm-5">
+                        <input type="text" name="first_name" id="firstName" required="1" class="form-control" placeholder="Enter FirstName"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="error_form" id="firstName_error_msg"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="lastName">Last Name</label>
+                    <div class="col-sm-5">
+                        <input type="text" name="first_name" id="lastName" required="1" class="form-control" placeholder="Enter LastName"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="error_form" id="lastName_error_msg"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="email1">Email Address</label>
+                    <div class="col-sm-5">
+                        <input type="email" name="email" id="email1" required="1" class="form-control" placeholder="Enter Email"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="error_form" id="email1_error_msg"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="password1">Password</label>
+                    <div class="col-sm-5">
+                        <input type="password" name="password" id="password1" required="1" class="form-control" placeholder="Enter Password"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="error_form" id="password1_error_msg"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="againPassword">Re-Enter Password</label>
+                    <div class="col-sm-5">
+                        <input type="password" name="password" id="againPassword" required="1" class="form-control" placeholder="Re-Enter Password"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="error_form" id="again_password_error_msg"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="phone">Phone Number</label>
+                    <div class="col-sm-5">
+                        <input type="number" name="phone_number" id="phone" required="1" class="form-control" placeholder="Enter phone number"/>
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="error_form" id="phone_error_msg"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="date_of_birth1">Date of Birth</label>
+                    <div class="col-sm-5">
+                        <input type="date" name="date_of_birth"  required="1" id="date_of_birth1" class="form-control"/>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2">Gander</label>
+                    <div class="col-sm-5">
+                        <label><input type="radio" required="1" name="gender" value="male">Male</label>
+                        <label><input type="radio" required="1" name="gender" value="female">FeMale</label>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="address">Address</label>
+                    <div class="col-sm-5">
+                        <textarea name="address" id="address" required="1" class="form-control" rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="district">District Name </label>
+                    <div class="col-sm-5">
+                        <select name="district_name"  id="district"  class="form-control">
+                            <option>Select District Name</option>
+                            <option value="dhaka">Dhaka</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Borisal">Borisal</option>
+                            <option value="Gopalganj">Gopalganj</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2" for="image1">Image</label>
+                    <div class="col-sm-5">
+                        <input multiple type="file" required="1" name="image" id="image1" accept="image/*"/>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-form-label col-sm-2"></label>
+                    <div class="col-sm-5">
+                        <label class="form-check-label">
+                            <input  type="checkbox" required="1"  name="agree" value="agree" class="form-check-input"/>
+                            I agree.
+                        </label>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group row" >
+                    <div class="col-sm-6 m-auto">
+                        <button type="submit" name="submit" class="btn btn-success btn-block"/>Submit</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<br/>
+
+<!------------------------------------------------ footer section-------------------------------------------------------->
+<footer class="footer">
+
+        <div class="container">
+            <div class="row ">
+                <div class="bottom-left col-md-3">
+                    <div class="footer_menu">
+                        <h4>Website</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom-left col-md-3">
+                    <div class="footer_menu">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom-left col-md-3">
+                    <div class="footer_menu">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Forums</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom-left col-md-3">
+                    <div class="footer_menu">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="bottom-center col-md-6 text-center m-auto">
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/smsofiqul.islam" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/sofiqul_310" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/smsofiqul-islam-310/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.behance.net/smsofiqul_islam" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+</footer>
+<section class="lower-footer">
+    <div class="container">
+        <div class="row">
+            <div class="bottom col-md-6 m-auto text-center">
+                <div>&copy; 2017 All Rights Reserved to S.M. Sofiqul Islam</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!------------------------------------------------ modal login form  section-------------------------------------------------------->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="modal fade " id="myModallogin">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Login Form</h3>
+                            <button class="" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="index.html" method="post">
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-3" for="email">User Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-3" for="password">Password</label>
+                                    <div class="col-sm-9">
+                                        <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-3"></label>
+                                    <div class="col-sm-3">
+                                <button type="button" name="show_password" id="showPassword" class="btn btn-danger lg"> Show Password</button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <button type="submit" name="submit" class="btn btn-success btn-block"/>Submit</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="gotoup"></div>
+<!--All js plugins-->
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/Proper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/my_javascript.js"></script>
+</body>
+</html>

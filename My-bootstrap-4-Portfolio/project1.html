@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Website|| My Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<!------------------------------------------------ header section-------------------------------------------------------->
+<header class="header sticky-top">
+    <section class="header-section">
+        <div class="container">
+            <div class=" row">
+                <div class="col-md-4 col-sm-12 m-auto">
+                    <ul class="pagination mb-0">
+                        <li class="page-item"><a class="page-link" href="research.html">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                        <li class="page-item"><a class="page-link" href="about.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="portfolio.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="research.html">4</a></li>
+                        <li class="page-item active"><a class="page-link" href="project1.html">5</a></li>
+                        <li class="page-item"><a class="page-link" href="project2.html">6</a></li>
+                        <li class="page-item"><a class="page-link" href="contact.html">7</a></li>
+                        <li class="page-item"><a class="page-link" href="gallery.html">8</a></li>
+                        <li class="page-item"><a class="page-link" href="project2.html">Next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="top-left  col-md-9">
+                    <i class="fa fa-phone"> +880-1521409419</i>
+                    <i class="fa fa-envelope-o"><a href="http://www.gmail.com">bit0310@iit.du.ac.bd</a> </i>
+                    <i class="fa fa-envelope-o"><a href="http://www.gmail.com">smsofiqulislam310@gmail.com</a> </i>
+                </div>
+
+                <div class="top-right col-md-3">
+                    <div class="social">
+                        <a href="https://www.facebook.com/smsofiqul.islam" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/sofiqul_310" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/smsofiqul-islam-310/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.behance.net/smsofiqul_islam" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------ navbar section-------------------------------------------------------->
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container ">
+            <a href="index.html" class="navbar-brand"><img class="rounded-circle md" src="image/my.jpg" style="height: 50px; width: 50px;" alt=""></a>
+            <button type="button"  class="navbar-toggler" style=" border: 1px solid black;" data-toggle="collapse" data-target="#myMenu">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myMenu" >
+                <Ul class="navbar-nav mr-auto" id="menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item dropdown" id="dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="active" >MY Work</a>
+                        <ul class="dropdown-menu bg-dark" id="dropdown-menu">
+                            <li><a href="research.html" class="nav-link">Research Work</a></li>
+
+                            <li><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="sub-dropdown" id="active1">Project</a>
+
+                                <ul class="dropdown-menu bg-dark" id="sub-dropdown-menu">
+                                    <li> <a class="dropdown-item" href="project1.html" id="active2">Project 1-2-3</a></li>
+                                    <li><a class="dropdown-item" href="project2.html" >Others-Project</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                </Ul>
+                <form class="form-inline ">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav navbar-right ml-auto">
+                    <li class="nav-item"><a href="" class="nav-link" data-toggle="modal" data-target="#myModallogin" >Login</a></li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+</header>
+
+
+<!------------------------------------------------ main content section-------------------------------------------------------->
+
+<section class="jumbotron" style="height: 500px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-center">My Project-1-2-3</h2>
+                        <hr/>
+
+                        <div>
+                            <button type="button" class="btn btn btn-primary btn-lg" data-toggle="modal"  data-target="#Project1" >Project-1</button>
+                        </div>
+                        <br/>
+                        <div>
+                            <button type="button" class="btn btn btn-primary btn-lg" data-toggle="modal"  data-target="#Project2" >Project-2</button>
+                        </div>
+                        <br/>
+                        <div>
+                            <button type="button" class="btn btn btn-primary btn-lg" data-toggle="modal"  data-target="#Project3" >Project-3</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="modal fade " id="Project1">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>gpit</h1>
+                                <button class="" data-dismiss="modal">
+                                    &cross;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row ">
+                                    <div class="col-md-12">
+                                        <div class="card" >
+                                            <img src="image/slideshow/gpitlogo.jpg" style="height: 300px; width: 300px; margin:0 auto; display: block;" alt="" class="card-img-top img-thumbnail">
+                                            <div class="card-body text-center">
+                                                <h2 class="card-title">Competence Development Web Portal for GPIT (5th semester, 2013)</h2>
+                                                <h4 class="card-sub-title">Tools & Technologies</h4>
+                                                <p class="card-text">HTML, CSS, JavaScript,Microsoft ASP.NET-4.0, Entity Framework-4.5, Microsoft SQL Server 2008, Visual
+                                                    Studio 2012. </p>
+                                                <a href="" class="btn btn-success"  data-toggle="collapse" data-target="#gpit1">Read Details</a>
+                                                <div class="collapse text-left" id="gpit1">
+                                                    It is a web based application which is used to  automate the training program management process of Grameenphone IT.
+                                                    Within many features, I would like to highlight only some features such as it also helps to get feedback from the trainees and the
+                                                    supervisors,all the information will be automatically updated in the database, employees can view training schedule through training
+                                                    calendar.It also helps to generate different kinds of graphical report such as pie chart, bar diagram etc.
+                                                </div>
+
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <a href="" class="btn btn-success"  data-toggle="collapse" data-target="#gpit">Show Certificate</a>
+
+                                                <div id="gpit">
+                                                    <img src="image/slideshow/gpit.jpg" style="height: 600px; width: 600px; margin:0 auto; display: block;" alt="" class="card-img-top img-thumbnail"/>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="modal fade " id="Project2">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>SouthTech Limited</h1>
+                                <button class="" data-dismiss="modal">
+                                    &cross;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row ">
+                                    <div class="col-md-12">
+                                        <div class="card" >
+                                            <img src="image/slideshow/sothtechlogo.jpg" style="height: 300px; width: 300px; margin: 0 auto; display: block;" alt="" class="card-img-top img-thumbnail"/>
+                                            <div class="card-body text-center">
+                                                <h2 class="card-title">Software Department(7th semester, 2014)</h2>
+                                                <h4 class="card-sub-title">Tools & Technologies</h4>
+                                                <p class="card-text">HTML, CSS, Bugzilla, JavaScript, MVC-Framework, Microsoft SQL Server 2008, Visual
+                                                    Studio 2013. </p>
+                                                <a href="" class="btn btn-success"  data-toggle="collapse" data-target="#southtech1">Read Details</a>
+                                                <div class="collapse text-left" id="southtech1">
+                                                    Working as Developer,  Tester, SRS Reporter, and Bug ReporterIntern.
+                                                </div>
+
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <a href="" class="btn btn-success"  data-toggle="collapse" data-target="#southtech">Show Certificate</a>
+
+                                                <div id="southtech">
+                                                    <a href="about.html"><img src="image/slideshow/southtech.jpg" style="height: 600px; width: 600px;" alt="" class="card-img-top img-thumbnail"></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="modal fade " id="Project3">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1>Icebreakers</h1>
+                                <button class="" data-dismiss="modal">
+                                    &cross;
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row ">
+                                    <div class="col-md-12">
+                                        <div class="card" >
+                                            <img src="image/slideshow/ice.png" style="height: 300px; width: 300px; margin: 0 auto; display: block;" alt="" class="card-img-top img-thumbnail"/>
+                                            <div class="card-body text-center">
+                                                <h2 class="card-title">Software Programmer and Senior IT Executive(2015-2017)</h2>
+                                                <h4 class="card-sub-title">Tools & Technologies</h4>
+                                                <p class="card-text">HTML, CSS3, Bootstrap, Jquery, PHP, JavaScript, MVC-Framework, My-SQL Server 2012, Visual
+                                                    Studio 2013. </p>
+                                                <a href="" class="btn btn-success"  data-toggle="collapse" data-target="#icebreakers">Read Details</a>
+                                                <div class="collapse text-left" id="icebreakers">
+                                                    Working as web designer and senior IT executive.
+                                                </div>
+
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <a href="" class="btn btn-success"  data-toggle="collapse" data-target="#icebreakers1">Show Certificate</a>
+
+                                                <div id="icebreakers1">
+                                                    <a href="about.html"><img src="image/slideshow/icebreakers.jpg" style="height: 600px; width: 600px;" alt="" class="card-img-top img-thumbnail"></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!------------------------------------------------ footer  section-------------------------------------------------------->
+
+<footer class="footer">
+
+        <div class="container">
+            <div class="row ">
+                <div class="bottom-left col-md-3">
+                    <div class="footer_menu">
+                        <h4>Website</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom-left col-md-3">
+                    <div class="footer_menu">
+                        <h4>About Us</h4>
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom-left col-md-3">
+                    <div class="footer_menu">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Forums</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bottom-left col-md-3">
+                    <div class="footer_menu">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="bottom-center col-md-6 text-center m-auto">
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/smsofiqul.islam" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://twitter.com/sofiqul_310" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.google.com" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/smsofiqul-islam-310/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://www.behance.net/smsofiqul_islam" target="_blank"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+</footer>
+<section class="lower-footer">
+    <div class="container">
+        <div class="row">
+            <div class="bottom col-md-6 m-auto text-center">
+                <div>&copy; 2017 All Rights Reserved to S.M. Sofiqul Islam</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!------------------------------------------------ modal login form  section-------------------------------------------------------->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+
+            <div class="modal fade " id="myModallogin">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Login Form</h3>
+                            <button class="" data-dismiss="modal">
+                                &times;
+                            </button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form action="index.html" method="post">
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-3" for="email">User Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-3" for="password">Password</label>
+                                    <div class="col-sm-9">
+                                        <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password"/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-form-label col-sm-3"></label>
+                                    <div class="col-sm-3">
+                                        <button type="button" name="show_password" id="showPassword" class="btn btn-danger "/>Show Password</button>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-12">
+                                        <button type="submit" name="submit" class="btn btn-success btn-block"/>Submit</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!--All js plugins-->
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/Proper.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/my_javascript.js"></script>
+</body>
+</html>

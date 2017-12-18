@@ -1,0 +1,14 @@
+.add-section{
+    background: url("../image/2.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+.carousel-item h3{
+    background-color: black;
+}
+
+.carousel-item-padding{
+    padding: 100px 250px;
+    color: red;
+}

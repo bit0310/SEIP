@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Syntax</title>
+</head>
+<body>
+        <h1 id="heading1">This is a heading.</h1>
+        <p>This is a heading.</p>
+
+
+        <script>
+            //document.write('Hello JavaScript');
+           // alert('Hello JavaScript');
+          //  console.log('Hello JavaScript');
+
+            document.write(document.getElementById('heading1').innerHTML);
+            document.write('<br/>');
+           /*
+           *strat with var
+            * A-z,a-z,0-9,_,$
+             * no number in first
+            */
+          var x=40;
+          var y=30;
+          document.write(x+y);
+          document.write('<br/>');
+           document.write(x-y);
+           document.write('<br/>');
+           document.write(x*y);
+           document.write('<br/>');
+           document.write(x/y);
+           document.write('<br/>');
+           document.write(x%y);
+           document.write('<br/>');
+            document.write('<hr/>');
+
+            var firstName ="sofiq";
+            var lastName ="khan";
+            document.write('Full name is: '+firstName+' '+lastName);
+            document.write('<br/>');
+// arithmatic unary
+            var x=10;
+            var y=20;
+            document.write(x++);
+            document.write('<br/>');
+            document.write(x);
+            document.write('<br/>');
+            document.write(--x);
+            document.write('<br/>');
+            document.write(x);
+            document.write('<br/>');
+                var x=-10;
+                document.write(-x);
+            document.write('<br/>');
+            document.write('<br/>');
+            document.write('<hr/>');
+
+//assignment
+            var x=10;
+            var y=20;
+
+            document.write(x+=y);
+            document.write('<br/>');
+            document.write(x-=y);
+            document.write('<br/>');
+            document.write(x*=y);
+            document.write('<br/>');
+            document.write(x/=y);
+            document.write('<br/>');
+            document.write(x%=y);
+            document.write('<br/>');
+            document.write('<br/>');
+            document.write('<br/>');
+            document.write('<hr/>');
+
+//conditional
+
+            var x=10;
+            var y=20;
+
+            document.write(x>y);
+            document.write('<br/>');
+            document.write(x>=y);
+            document.write('<br/>');
+            document.write(x<y);
+            document.write('<br/>');
+            document.write(x<=y);
+            document.write('<br/>');
+            document.write(x==y);
+            document.write('<br/>');
+            document.write(x!=y);
+            document.write('<br/>');
+            document.write(x===y);
+            document.write('<br/>');
+            document.write(x!==y);
+            document.write('<br/>');
+            document.write('<br/>');
+            document.write('<hr/>');
+//logical
+
+
+            var x=10;
+            var y=20;
+            var z=30;
+            var a=true;
+
+            document.write((x>y)&&(y>z));
+            document.write('<br/>');
+            document.write((x<y)&&(y<z));
+            document.write('<br/>');
+            document.write((x>y)||(y>z));
+            document.write('<br/>');
+            document.write((x<y)||(y<z));
+            document.write('<br/>');
+            document.write('<br/>');
+            document.write(a);
+            document.write('<br/>');
+            document.write(!a);
+
+            document.write('<br/>');document.write('<br/>');
+            document.write('<hr/>');
+
+//conditional statement
+            var x=10;
+            var y=20;
+            var z=40;
+            if(x>y) {
+                document.write('Hellow world');
+            }
+            document.write('<br/>');
+            document.write('<br/>');
+
+            if(x>y) {
+                document.write('Hellow world');
+            }else{
+                document.write('sofiq');
+            }
+            document.write('<br/>');
+            document.write('<br/>');
+
+
+            if(x>y) {
+                document.write('Hellow world');
+            }else if(y>z){
+                document.write('Hellow sofiq');
+            }else if(z>x){
+                document.write('Hellow Bitm');
+            }else {
+                document.write('Hellow Basis');
+            }
+            document.write('<br/>');
+            document.write('<br/>');
+
+            var x=10;
+            switch(x){
+                case 5:
+                    document.write('Hellow world');
+                    break;
+                case 10:
+                    document.write('Hellow Bangladesh');
+                    break;
+                case 15:
+                    document.write('Hellow Gopalganj');
+                    break;
+                default:
+                    document.write('Hellow Dhaka');
+            }
+            document.write('<br/>');
+
+            document.write('<hr/>');
+
+            //repeted statement
+
+            for(i=0; i<=10; i++){
+                document.write('Hellow Dhaka');
+            }
+            document.write('<br/>');
+            document.write('<br/>');
+            var x;
+            for(i=99; i>=88; i--){
+                document.write(i + '<br/>');
+            }
+
+            document.write('<br/>');
+            document.write('<br/>');
+            var x=10;
+            while(x<15){
+                document.write(x+ '<br/>');
+                x++;
+            }
+
+            document.write('<br/>');
+            document.write('<br/>');
+
+            var x=10;
+            do{
+                document.write(x+ '<br/>');
+                x++;
+            } while (x>15)
+
+
+            document.write('<br/>');
+            document.write('<br/>');
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

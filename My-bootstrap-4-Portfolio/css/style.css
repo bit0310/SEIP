@@ -1,0 +1,238 @@
+.header-section{
+    background-color: #062c28;
+}
+
+.navbar{
+    background-color: #062c38;
+}
+
+.lower-footer{
+    background-color: #062c28;
+    color: white;
+    height: 50px;
+    padding-top: 15px;
+}
+.navbar-nav li a {
+    color: white;
+}
+.navbar li a:hover, #active, #active1,#active2{background:black; }
+.dropdown-menu a:hover{
+    background:black;
+    color: white;
+}
+
+.top-left i{
+    text-decoration:none;
+    color: white;
+    height: auto;
+    margin-left: 10px;
+
+}
+
+.top-left i a{
+    color: white;
+    text-decoration:none;
+    background-color: #062c33;
+
+}
+
+
+.social{
+    display: block;
+    text-align: right;
+}
+
+.social a i{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 5px;
+    padding: 5px;
+
+}
+.social a i:hover{
+
+    color: red;
+    background-color: black;
+
+
+}
+.carousel-caption h1{
+    color: red;
+    background-color: black;
+    opacity: inherit;
+}
+.carousel-caption p{
+    color: red;
+    font-style: inherit;
+    font-size:20px;
+    background-color: black;
+}
+
+
+
+.footer{
+    height:auto;
+    font-size: 20px;
+    color: white;
+    padding: 0px;
+    background-color: #062c38;
+    margin: 0;
+
+
+}
+
+.footer_menu h4{
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #062c20;
+}
+
+.footer_menu ul{
+    list-style: none;
+    text-align: left;
+    background-color: #062C4C;
+
+
+
+}
+.footer_menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+
+
+}
+
+.footer_menu ul li a:hover{
+    color:green;
+
+
+}
+.footer-social i{
+    margin: 0;
+}
+.footer-social a i{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+.footer-social a i:hover{
+
+    background-color: black;
+    color: red;
+
+}
+
+.add-section{
+    background: url("../image/slideshow/IIT.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.carousel-item h3{
+    background-color: white;
+    text-align: center;
+}
+
+.carousel-item-padding{
+    margin: 0 auto;
+    color: black;
+    padding: 100px;
+}
+
+#gotoup{
+    background: url("../image/scrolltop.png")no-repeat 0 0; height: 37px; width: 36px;border-radius: 25px;
+    bottom: 7px; right: 10px; position: fixed; cursor: pointer ;
+
+}
+
+/*********************************************************************
+                        SKILLS BAR
+*********************************************************************/
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:20px;
+    width:100%;
+    background:#eeeeee;
+    height:50px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    height:50px;
+    position:absolute;
+    top:0;
+    left:0;
+    width:130px;
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:50px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:50px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:12px;
+    height:50px;
+    line-height:35px;
+    color:#ffffff;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+.error_form{
+    color: red; font-size: 16px;
+    padding: 10px;
+
+}
