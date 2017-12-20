@@ -70,44 +70,6 @@ $('#showPassword').click(function(){
 //Register form validation
 
 $(function () {
-    $('#firstName_error_msg').hide();
-    $('#lastName_error_msg').hide();
-    $('#email1_error_msg').hide();
-    $('#password1_error_msg').hide();
-    $('#again_password_error_msg').hide();
-    $('#phone_error_msg').hide();
-
-
-    var error_firstName = false;
-    var error_lastName = false;
-    var error_email1 = false;
-    var error_password1 = false;
-    var error_again_password = false;
-    var error_phoneNumber = false;
-
-    $('#firstName').focusout(function () {
-        check_firstName();
-    });
-
-    $('#lastName').focusout(function () {
-        check_lastName();
-    });
-
-    $('#email1').focusout(function () {
-        check_email();
-    });
-
-    $('#password1').focusout(function () {
-        check_password();
-    });
-
-    $('#againPassword').focusout(function () {
-        check_againPassword();
-    });
-    $('#phone').focusout(function () {
-        check_phoneNumber();
-    });
-
 
 //firstName.....................................................................
     function check_firstName() {
@@ -115,34 +77,76 @@ $(function () {
         if (firstName_length < 6 || firstName_length > 20){
             $('#firstName_error_msg').html("FirstName Should be between 6-20 Characters!");
             $('#firstName_error_msg').show();
-            error_firstName = true;
+            return false;
+            //error_firstName = true;
         } else{
             $('#firstName_error_msg').hide();
+            return true;
         }
     }
+
+    $('#firstName').focusout(function () {
+        check_firstName();
+    });
+
+    $('#firstName').blur(function () {
+        check_firstName();
+    });
+
+    $('#firstName').keyup(function () {
+        check_firstName();
+    });
 //lastName.....................................................................
     function check_lastName() {
         var firstName_length = $('#lastName').val().length;
         if (firstName_length < 6 || firstName_length > 20){
             $('#lastName_error_msg').html("LastName Should be between 6-20 Characters!");
             $('#lastName_error_msg').show();
-            error_lastName = true;
+           // error_lastName = true;
+            return false;
         } else{
             $('#lastName_error_msg').hide();
+            return true;
         }
     }
+
+    $('#lastName').focusout(function () {
+        check_lastName();
+    });
+
+    $('#lastName').blur(function () {
+        check_lastName();
+    });
+
+    $('#lastName').keyup(function () {
+        check_lastName();
+    });
 
 //email.....................................................................
     function check_email() {
         var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-z0-9.-]+\.[a-zA-Z]{2,4}$/i);
         if (pattern.test($('#email1').val())){
             $('#email1_error_msg').hide();
+            return true;
         } else{
             $('#email1_error_msg').html("Invalid Email Address!");
             $('#email1_error_msg').show();
-            error_email1 = true;
+            return false;
+            //error_email1 = true;
         }
     }
+
+    $('#email1').focusout(function () {
+        check_email();
+    });
+
+    $('#email1').blur(function () {
+        check_email();
+    });
+
+    $('#email1').keyup(function () {
+        check_email();
+    });
 
 //password.....................................................................
     function check_password() {
@@ -150,11 +154,36 @@ $(function () {
         if (password < 8 ){
             $('#password1_error_msg').html("Password  Should be minimum 8 Characters!");
             $('#password1_error_msg').show();
-            error_password1 = true;
+            return false;
+            //error_password1 = true;
         } else{
             $('#password1_error_msg').hide();
+            return true;
         }
     }
+
+    $('#password1').focusout(function () {
+        check_password();
+    });
+
+    $('#password1').blur(function () {
+        check_password();
+    });
+
+    $('#password1').keyup(function () {
+        check_password();
+    });
+
+
+//showpassword.................................................
+
+    $('#showRegPassword').click(function () {
+        if(this.checked){
+            $('#password1').attr('type', 'text');
+        }else{
+            $('#password1').attr('type', 'password');
+        }
+    });
 
 //againPassword.....................................................................
     function check_againPassword() {
@@ -163,11 +192,25 @@ $(function () {
         if (password != againPassword ){
             $('#again_password_error_msg').html("Password did not match!");
             $('#again_password_error_msg').show();
-            error_again_password = true;
+            return false;
+            //error_again_password = true;
         } else{
             $('#again_password_error_msg').hide();
+            return true;
         }
     }
+
+    $('#againPassword').focusout(function () {
+        check_againPassword();
+    });
+
+    $('#againPassword').blur(function () {
+        check_againPassword();
+    });
+
+    $('#againPassword').keyup(function () {
+        check_againPassword();
+    });
 
 //phone number.....................................................................
 
@@ -176,24 +219,163 @@ $(function () {
         if (phoneNumber_length < 11 || phoneNumber_length > 11){
             $('#phone_error_msg').html("PhoneNumber should be 11 Characters!");
             $('#phone_error_msg').show();
-            error_phoneNumber = true;
+            return false;
+            //error_phoneNumber = true;
         } else{
             $('#phone_error_msg').hide();
+            return true;
         }
     }
 
-    $('#myForm').submit(function () {
-        var error_firstName = false;
-        var error_lastName = false;
-        var error_email1 = false;
-        var error_password1 = false;
-        var error_again_password = false;
-        var error_phoneNumber = false;
+    $('#phone').focusout(function () {
+        check_phoneNumber();
+    });
 
-        if(error_firstName == false && error_lastName == false && error_email1==false && error_password1 == false &&
-            error_again_password==false && error_phoneNumber == false){
+    $('#phone').blur(function () {
+        check_phoneNumber();
+    });
+
+    $('#phone').keyup(function () {
+        check_phoneNumber();
+    });
+
+//date of birth.....................................................................
+
+    function checkBirthDate() {
+        var dateOfBirth = $('input[type="date"]').val();
+        if(dateOfBirth){
+            $('#date_of_birth_error_msg').hide();
             return true;
-        }else{
+        } else {
+            $('#date_of_birth_error_msg').html("Please select Date of Birth!");
+            $('#date_of_birth_error_msg').show();
+            return false;
+        }
+    }
+
+    $('input[type="date"]').blur(function () {
+        checkBirthDate();
+    });
+
+
+//check gender.....................................................................
+
+function checkGender() {
+    var genderValue = $('input[type="radio"]:checked').val();
+    if(genderValue){
+        $('#gender_error_msg').hide();
+        return true;
+    } else {
+        $('#gender_error_msg').html("Please select a gender!");
+        $('#gender_error_msg').show();
+        return false;
+    }
+}
+
+    $('input[type="radio"]').blur(function () {
+        checkGender();
+    });
+
+//check address.....................................................................
+
+   function checkAddress() {
+       var addressLength = $('#address').val().length;
+       if(addressLength > 10){
+           $('#address_error_msg').hide();
+           return true;
+       } else {
+           $('#address_error_msg').html("Address Must be more than 10 Characters!");
+           $('#address_error_msg').show();
+           return false;
+       }
+   }
+
+$('#address').focusout(function () {
+    checkAddress();
+});
+
+$('#address').blur(function () {
+        checkAddress();
+});
+
+ $('#address').keyup(function () {
+        checkAddress();
+});
+
+
+//check districtName.....................................................................
+
+    function checkDistrict() {
+        var districtName = $('#district').val();
+        if(districtName == ' '){
+            $('#district_error_msg').html("Please select a district ");
+            $('#district_error_msg').show();
+            return false;
+        } else {
+            $('#district_error_msg').hide();
+            return true;
+        }
+    }
+
+    $('#district').change(function () {
+        checkDistrict();
+    });
+
+
+
+//check image.....................................................................
+
+    function image() {
+        var checkBox = $('input[type="file"]').val();
+        if (checkBox) {
+            $('#image_error_msg').hide();
+            return true;
+        } else {
+            $('#image_error_msg').html("Please select 1 or more image!");
+            $('#image_error_msg').show();
+            return false;
+        }
+    }
+
+
+
+    $('input[type="file"]').change(function () {
+        image();
+    });
+
+//checkbox.......................................................
+
+    function checkBox() {
+        var checkBox = $('input[type="checkbox"]:checked').val();
+        if (checkBox) {
+            $('#checkbox_error_msg').hide();
+            return true;
+        } else {
+            $('#checkbox_error_msg').html("Please select I Agree!");
+            $('#checkbox_error_msg').show();
+            return false;
+        }
+    }
+
+
+
+$('input[type="checkbox"]').change(function () {
+    checkBox();
+});
+
+
+
+
+
+    $('#myForm').submit(function () {
+
+        if(check_firstName() == true && check_lastName() == true && check_email() == true &&
+            check_password() == true && check_againPassword() == true && check_phoneNumber() == true &&
+            checkBirthDate() == true && checkGender() == true && checkAddress() == true && checkDistrict()== true &&
+            image() == true &&
+            checkBox() == true){
+            return true;
+        }else {
             return false;
         }
 
