@@ -12,69 +12,13 @@
 <body>
 <form action="" method="post" id="registration">
     <table>
-        <tr>
-            <th>First Name</th>
-            <td><input type="text" name="first_name" id="firstName"/>
-            <span id="firstName_Error" style="color: red;" ></span>
-            </td>
-        </tr>
-
-        <tr>
-            <th>Last Name</th>
-            <td><input type="text" name="last_name" id="lastName"/>
-            <span id="lastName_Error" style="color: red;"></span>
-            </td>
-        </tr>
-
-        <tr>
-            <th>Gander</th>
-            <td>
-                <input type="radio" name="gender" value="Male">Male
-                <input type="radio" name="gender" value="FeMale">FeMale
-                <span id="genderError" style="color: red;"></span>
-            </td>
-        </tr>
-
-        <tr>
-            <th>Email</th>
-            <td><input type="email" name="email" id="email"/>
-            <span id="email_Error" style="color: red;"></span>
-            </td>
-        </tr>
-
-        <tr>
-            <th>Password</th>
-            <td><input type="password" name="password" id="password"/>
-            <input type="checkbox"  id="checkbox"/> Show Password
-                <span id="password_Error" style="color: red;"></span>
-            </td>
-        </tr>
-
-        <tr>
-            <th>Confirm Password</th>
-            <td><input type="password" name="again_password" id="againPassword"/>
-                <span id="againPassword_Error" style="color: red;" ></span>
-            </td>
-        </tr>
-
-        <tr>
-            <th>District Name</th>
-            <td>
-                <select name="district_name" id="districtName">
-                    <option value=" ">Select District Name</option>
-                    <option value="Dhaka">Dhaka</option>
-                    <option value="Gopalganj">Gopalganj</option>
-                    <option value="Khulna">Khulna</option>
-                    <option value="Kotalipara">Kotalipara</option>
-                </select>
-                <span id="districtName_Error" style="color: red;"></span>
-            </td>
-        </tr>
 
         <tr>
             <th>Image</th>
-            <td><input type="file"  id="image"/>
-                <img src="index.html" alt="">
+            <td>
+
+                <input type="file" name="file" id="profile-img">
+                <img src="" id="profile-img-tag" width="200px" />
             </td>
         </tr>
 
@@ -87,8 +31,6 @@
     </table>
 
 </form>
-
-
 
 
 
